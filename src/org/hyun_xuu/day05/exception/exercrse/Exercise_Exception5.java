@@ -14,8 +14,7 @@ public class Exercise_Exception5 {
 		} catch (NullPointerException e) {
 			// TODO: handle exception
 			System.out.println("null값을 참조 하였습니다.");
+			// .앞이 null인데 명령어를 작성함
 		}
-
-
 	}
 }

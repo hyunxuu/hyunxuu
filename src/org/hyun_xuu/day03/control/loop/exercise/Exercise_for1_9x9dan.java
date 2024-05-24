@@ -2,7 +2,7 @@ package org.hyun_xuu.day03.control.loop.exercise;
 
 import java.util.Scanner;
 
-public class Exercise_for1 {
+public class Exercise_for1_9x9dan {
 	public static void main(String [] args ) {
 		 //정수 하나를 입력 받아 그 수가 1~9사이의 수일때만 그 수의 구구단을 출력하세요.
 		//단, 조건이 맞지 않을때 1~9사이의 양수를 입력하여야 합니다를 출력
