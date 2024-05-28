@@ -1,0 +1,20 @@
+package org.hyun_xuu.day08.oop.objectArray;
+
+public class ObjectArray {
+	public static void main(String []args) {
+		Circle donut = new Circle(10);
+		System.out.println("==== 객체 생성 후 출력 ====");
+		System.out.println("원의 넓이 : "+donut.getArea());
+		Circle pizza = new Circle(7);
+		System.out.println("원의 넓이 : "+pizza.getArea());
+		
+		Circle [] cArrs = new Circle[5];
+		cArrs[0]=donut;
+		cArrs[1]=pizza;
+		cArrs[2]=new Circle(6);  //> 없을때 null오류 뜸
+		System.out.println("==== 배열 초기화 후 출력 ====");
+		System.out.println(cArrs[0].getArea());
+		System.out.println(cArrs[1].getArea());
+		System.out.println(cArrs[2].getArea()); 
+	}
+}
