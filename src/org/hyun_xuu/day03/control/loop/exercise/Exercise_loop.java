@@ -101,8 +101,8 @@ public class Exercise_loop {
 		System.out.print("단수를 입력하세요.");
 		int dan = sc.nextInt();
 		
-		if(dan>=10) {
-			System.out.println("10이하의 수만 입력 가능");
+		if(dan>10) {
+			System.out.println("10미만의 수만 입력 가능");
 		}else { 
 			for(int i = 1; i<=dan; i++) {
 				System.out.println(dan+"x"+i+"="+(dan*i));

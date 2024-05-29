@@ -1,5 +1,7 @@
 package org.hyun_xuu.day04.control.loop.exercise;
 
+import java.util.Scanner;
+
 public class Exercise_ForDouble {
 
 	public void Exercise_01() {
@@ -35,6 +37,25 @@ public class Exercise_ForDouble {
 					System.out.print(i+"x"+dan+"="+(i*dan));
 					System.out.print("\t");         // "|t" tap만큼 띄어줘서 균일하게 정리됨.
 				}		System.out.println("");
+		}
+	}
+	
+	public void Exercise_04() {
+		//별 반피라미드 모양
+		System.out.print("출력하고 싶은 별의 개수 :");
+		Scanner sc=new Scanner(System.in);
+		int i=sc.nextInt();  //개수 입력
+
+		for(int star=1; star<=i; star++) { //줄을 1에서 i만큼 늘림
+			for(int line=1; line<=star; line++) { //별이 줄만큼 생김
+				System.out.print("*");
+			}System.out.println(); //줄 바꿈
+		}
+
+		for(int star=i-1; star>=1; star--) { //줄을 i에서 1로 줄임
+			for(int line=1; line<=star; line++) { //별이 줄만큼 생김
+				System.out.print("*");
+			}System.out.println(); //줄 바꿈
 		}
 	}
 }

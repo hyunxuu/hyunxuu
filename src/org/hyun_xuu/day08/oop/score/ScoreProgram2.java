@@ -16,14 +16,14 @@ public class ScoreProgram2 {
 		
 		end :
 		while(true) {
-			int choice = printMenu();   //코드보기 단축키 ctrl+클릭, 지우기 alt+ < (방향키)
+			int choice = printMenu1();   //코드보기 단축키 ctrl+클릭, 지우기 alt+ < (방향키)
 			
 			switch(choice) {
 			case 1: 
-				inputScore();
+				inputScore2();
 				break;
 			case 2: 
-				printScore();
+				printScore3();
 				break;
 			case 3: 
 				displayMsg("프로그램을 종료합니다.");
@@ -34,12 +34,37 @@ public class ScoreProgram2 {
 		}
 	}
 	
+	
+	
+	public static int printMenu1() {
+		Scanner sc = new Scanner(System.in) ;
+		System.out.println("==== 메인메뉴 ====");
+		System.out.println("1.성적 입력");
+		System.out.println("2.성적 출력");
+		System.out.println("3.종료");
+		System.out.println("선택: ");
+		int choice = sc.nextInt();
+		return choice; 				
+	}
+	
+	private static void inputScore2() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("===== 성적 입력 =====");
+		System.out.println("국어 : ");
+		kor = sc.nextInt();
+		System.out.println("영어 : ");
+		eng = sc.nextInt();
+		System.out.println("수학 : ");
+		math = sc.nextInt();
+		
+	}
+	
 	private static void displayMsg(String message) {
 		// TODO Auto-generated method stub
 		System.out.println(message);
 	}
 
-	private static void printScore() {
+	private static void printScore3() {
 		// TODO Auto-generated method stub
 
 		System.out.println("==== 성적 출력 ====");
@@ -50,25 +75,7 @@ public class ScoreProgram2 {
 		System.out.println("평균 : "+(kor+eng+math)/3);
 	}
 
-	private static void inputScore() {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("===== 성적 입력 =====");
-		System.out.println("국어 : ");
-		kor = sc.nextInt();
-		System.out.println("영어 : ");
-		eng = sc.nextInt();
-		System.out.println("수학 : ");
-		math = sc.nextInt();
-	}
+
 	
-	public static int printMenu() {
-		Scanner sc = new Scanner(System.in) ;
-		System.out.println("==== 메인메뉴 ====");
-		System.out.println("1.성적 입력");
-		System.out.println("2.성적 출력");
-		System.out.println("3.종료");
-		System.out.println("선택: ");
-		int choice = sc.nextInt();
-		return choice;
-	}
+
 }
