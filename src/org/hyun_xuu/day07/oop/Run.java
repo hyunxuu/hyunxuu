@@ -13,17 +13,18 @@ public class Run {
 		Run.oopPractice1();    // 접어둔 메서드 이름 검색?기능
 		oopExercise();
 		
-		
+		Run.constructorEx();
 
 		
 
 	}
-	public void constructorEx() {
+	public static void constructorEx() {
 		//기본생성자 이용해서 객체 생성,bookName,author은 모두 비어있음.
 //		book.bookName = "춘향전";
 //		book.author = "작자미상";
 		Book book = new Book("춘향전","작자미상");
 		Book emptyBook = new Book();
+		System.out.println(book.auther + book.bookName);
 	}
 	
 	public static void oopPractice1() {

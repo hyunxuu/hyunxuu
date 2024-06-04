@@ -29,5 +29,9 @@ public class Exam_upcasting {
 		p = s;
 		p= new Worker();
 		p= new Doctor();
+		
+		p.id= "@@";
+		
+		System.out.println("id 명 : "+p.id);
 	}
 }

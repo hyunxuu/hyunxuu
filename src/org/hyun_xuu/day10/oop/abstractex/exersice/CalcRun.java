@@ -17,10 +17,12 @@ public class CalcRun{
 //		int ㅌ = sc.nextInt();
 //		int ㅊ = sc.nextInt();
 //		int ㅍ = sc.nextInt();
-		
+		Scanner sc = new Scanner(System.in);
 		int[] array = {5,7,10,23};
+		int i1 = sc.nextInt();
+		int i2 = sc.nextInt();
 		
-		System.out.println("합 : "+calc.add(5,7));   	//Scanner 선언된 변수들을 대입하여 입력한 결과를 출력 받을 수 있음.
+		System.out.println("합 : "+calc.add(i1,i2));   	//Scanner 선언된 변수들을 대입하여 입력한 결과를 출력 받을 수 있음.
 		System.out.println("차 : "+calc.substract(10,23));
 		System.out.println("평균 방법1 : "+calc.average(array));
 		System.out.println("평균 방법2 : "+calc.average(new int[] {5,7,10,23}));
