@@ -20,7 +20,7 @@ public class ViewStudent {
 		return menu;
 	}
 
-	public void disPlayMsg(String mng) {
+	public void displayMsg(String mng) {
 		// TODO Auto-generated method stub
 		System.out.println(mng);
 	}
@@ -37,8 +37,8 @@ public class ViewStudent {
 		
 		return std;
 	}
-
-	public void disPlayStudents(List<Student> stdList) {
+	
+	public void displayStudents(List<Student> stdList) {
 		// TODO Auto-generated method stub
 		System.out.println("========== 학생 전체 정보 출력 ==========");
 		for(Student std : stdList) {
@@ -48,6 +48,33 @@ public class ViewStudent {
 			System.out.println("=========================================");
 		}
 	}
+
+	public String inputName(String category) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("이름 : ");
+		String name = sc.next();
+		return name;
+	}
+
+	public Student modifyStudent(Student student) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("1번 째 점수 : ");
+		student.setFirstScore(sc.nextInt());
+		System.out.println("2번 째 점수 : ");
+		student.setSecondScore(sc.nextInt());
+		return student;
+	}
+
+	public void displayStudent(Student std) {
+		System.out.println("====== 검색된 정보 출력 ======");
+			System.out.printf("\t이름 : %s\n", std.getName());
+			System.out.printf("\t1차 점수 : %d\n", std.getFirstScore());
+			System.out.printf("\t2차 점수 : %d\n", std.getSecondScore());
+			System.out.println("=================================");
+	}
+
+
+
  
 
 }

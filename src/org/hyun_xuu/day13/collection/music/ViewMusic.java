@@ -3,6 +3,8 @@ package org.hyun_xuu.day13.collection.music;
 import java.util.List;
 import java.util.Scanner;
 
+import org.hyun_xuu.day13.collection.music.model.Music;
+
 public class ViewMusic {
 	
 	private Scanner sc;
@@ -13,7 +15,7 @@ public class ViewMusic {
 
 	public int printMenu() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("========= 메인 메뉴 ========");
+		System.out.println("\n========= 메인 메뉴 ========");
 		System.out.println("1. 마지막 위치에 곡 추가");
 		System.out.println("2. 첫 위치에 곡 추가");
 		System.out.println("3. 전체 곡 목록 출력");
